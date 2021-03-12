@@ -19,6 +19,4 @@ func TestHost(t *testing.T) {
 		t.Errorf("HostInfo failed : %w", err)
 
 	}
-
-
 }
