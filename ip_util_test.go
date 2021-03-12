@@ -11,3 +11,14 @@ func TestExternalIP(t *testing.T) {
 		t.Errorf("ExternalIP failed : %w", err)
 	}
 }
+
+// TestHostInfo() verifies that Host-functions without returning error
+func TestHost(t *testing.T) {
+	_, err := HostInfo()
+	if err != nil {
+		t.Errorf("HostInfo failed : %w", err)
+
+	}
+
+
+}

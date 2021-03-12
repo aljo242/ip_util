@@ -88,7 +88,7 @@ func HostInfo() (Host, error) {
 func SelectHost(ipMap map[int]string) (string, error) {
 	fmt.Printf("Choose a host to use:\n")
 	for i := 0; i < len(ipMap); i++ {
-		val, _ := ipMap[i]
+		val := ipMap[i]
 		fmt.Printf("%d\t%v\n", i, val)
 	}
 
